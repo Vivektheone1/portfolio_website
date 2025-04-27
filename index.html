@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Share Market Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="darkModeToggle">🌙</button>
+        </nav>
+    </header>
+
+    <section id="home" class="section reveal">
+        <div class="content">
+            <h1>Welcome to My Share Market Portfolio</h1>
+            <p>Showcasing my technical skills, projects, and achievements.</p>
+            <button onclick="scrollToSection('projects')">View Projects</button>
+        </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Stock Analyzer App</h3>
+                <p>Analyzed market data using APIs and visualized stock trends.</p>
+            </div>
+            <div class="project">
+                <h3>Investment Tracker</h3>
+                <p>Developed a responsive web app to track and predict portfolio growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML5, CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Responsive Web Design</li>
+            <li>API Integration</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section reveal">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <button id="scrollTopBtn">⬆️</button>
+
+    <footer>
+        <p>&copy; 2025 MyPortfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
